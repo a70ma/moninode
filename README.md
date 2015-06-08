@@ -4,11 +4,16 @@ Moninode
 [![NPM](https://nodei.co/npm/moninode.png)](https://nodei.co/npm/moninode/)
 
 Monitor library written for client/server side needs in javascript.
-Values monitorized are: 
+**Monitorized values**: 
 - os free memory
 - load average ( 1, 5 and 15 minutes)
 - RSS
 - process uptime
+
+**Resources**:
+- [Homepage](http://moninode.com)
+- [Git](https://github.com/a70ma/moninode)
+- [NPM](https://www.npmjs.com/package/moninode)
 
 Setup
 ====
@@ -33,9 +38,9 @@ m.start( options )
 ```
 
 - options:
-		```interval``` - data collecting interval in miliseconds, defaults to 60000
-        ```fremem``` - Minimum Free memory in bytes to trigger alarm
-        ```rss``` - Maximum RSS memory used by current process in bytes to trigger alarm
+	- ```interval``` - data collecting interval in miliseconds, defaults to 60000
+    - ```fremem``` - Minimum Free memory in bytes to trigger alarm
+    - ```rss``` - Maximum RSS memory used by current process in bytes to trigger alarm
 
 Stop collecting OS status
 ----
