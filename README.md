@@ -9,6 +9,7 @@ Monitor library written for client/server side needs in javascript.
 - load average ( 1, 5 and 15 minutes)
 - RSS
 - process uptime
+- number of callbacks in the Node work queue, like setIntervals, timeouts, http requests etc
 
 **Resources**:
 - [Homepage](http://moninode.com)
@@ -41,6 +42,7 @@ m.start( options )
 	- ```interval``` - data collecting interval in miliseconds, defaults to 60000
     - ```fremem``` - Minimum Free memory in bytes to trigger alarm
     - ```rss``` - Maximum RSS memory used by current process in bytes to trigger alarm
+    - ```handles``` - Maximum number of callbacks waiting in the Node work queue, this value is taken from ```process._getActiveHandles()```
 
 Stop collecting OS status
 ----
@@ -98,6 +100,9 @@ setTimeout(function(){
 
 Change Log
 ====
+0.0.2
+----
+- added handles count, value collected with process._getActiveHandles()
 
 0.0.1
 ----
