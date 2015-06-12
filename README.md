@@ -3,6 +3,8 @@ Moninode
 
 [![NPM](https://nodei.co/npm/moninode.png)](https://nodei.co/npm/moninode/)
 
+![Build Status](https://api.travis-ci.org/a70ma/moninode.svg)
+
 Monitor library written for client/server side needs in javascript.
 **Monitorized values**: 
 - os free memory
