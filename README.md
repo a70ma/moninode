@@ -6,6 +6,7 @@ Moninode
 ![Build Status](https://api.travis-ci.org/a70ma/moninode.svg)
 
 Monitor library written for client/server side needs in javascript.
+
 **Monitorized values**: 
 - os free memory
 - load average ( 1, 5 and 15 minutes)
@@ -57,6 +58,7 @@ Events
 - ```log```
 	+ triggers everytime moninode collects OS status
 	+ Example:
+
 		```
 			moninode.on("log", function( data)
 			{
@@ -68,6 +70,7 @@ Events
 - ```alarm```
 	+ triggers when any threshold is reach:
 	+ Example:
+
 		```
 			moninode.on("alarm", function( data)
 			{
